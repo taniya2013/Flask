@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask Website</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">MyWebsite</div>
+
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="/login" class="login-btn">Login</a>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>Build Modern Websites Using Flask</h1>
+
+        <p>
+            Create secure, responsive and beautiful web applications
+            powered by Python and Flask.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#" class="btn1">Get Started</a>
+
+            <a href="#" class="btn2">Learn More</a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="{{ url_for('static', filename='images/hero.png') }}" alt="Hero Image">
+
+    </div>
+
+</section>
+
+
+
+<section class="services" id="services">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌐 Web Development</h3>
+<p>Responsive websites built with HTML, CSS and Flask.</p>
+</div>
+
+<div class="card">
+<h3>🐍 Python Development</h3>
+<p>Backend development using Python and Flask framework.</p>
+</div>
+
+<div class="card">
+<h3>🤖 AI Solutions</h3>
+<p>Machine Learning and AI-powered web applications.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="about" id="about">
+
+<h2>About Us</h2>
+
+<p>
+
+We develop modern web applications using Flask and Python.
+Our focus is on clean design, high performance and user-friendly experiences.
+
+</p>
+
+</section>
+
+
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email : info@example.com</p>
+
+<p>Phone : +91 XXXXX XXXXX</p>
+
+<p>Location : India</p>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 MyWebsite | All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
+
+
+
