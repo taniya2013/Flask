@@ -3,132 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Flask Website</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Taniya's Web Scraping Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-
 <body>
 
-<header>
+    <div class="hero">
 
-    <nav class="navbar">
+        <nav>
+            <div class="logo">Taniya</div>
 
-        <div class="logo">MyWebsite</div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+            </div>
+        </nav>
 
-        <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="content">
 
-        <a href="/login" class="login-btn">Login</a>
+            <div class="card">
 
-    </nav>
+                <h1>Web Scraping Dashboard</h1>
 
-</header>
+                <p>
+                    Extract, analyze and organize data efficiently
+                    using Python, Flask and BeautifulSoup.
+                </p>
 
+                <div class="buttons">
+                    <a href="/scrape" class="btn primary">
+                        Start Scraping
+                    </a>
 
-<section class="hero">
+                    <a href="/data" class="btn secondary">
+                        View Data
+                    </a>
+                </div>
 
-    <div class="hero-text">
-
-        <h1>Build Modern Websites Using Flask</h1>
-
-        <p>
-            Create secure, responsive and beautiful web applications
-            powered by Python and Flask.
-        </p>
-
-        <div class="buttons">
-
-            <a href="#" class="btn1">Get Started</a>
-
-            <a href="#" class="btn2">Learn More</a>
+            </div>
 
         </div>
 
     </div>
 
-    <div class="hero-image">
-
-        <img src="{{ url_for('static', filename='images/hero.png') }}" alt="Hero Image">
-
-    </div>
-
-</section>
-
-
-
-<section class="services" id="services">
-
-<h2>Our Services</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🌐 Web Development</h3>
-<p>Responsive websites built with HTML, CSS and Flask.</p>
-</div>
-
-<div class="card">
-<h3>🐍 Python Development</h3>
-<p>Backend development using Python and Flask framework.</p>
-</div>
-
-<div class="card">
-<h3>🤖 AI Solutions</h3>
-<p>Machine Learning and AI-powered web applications.</p>
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="about" id="about">
-
-<h2>About Us</h2>
-
-<p>
-
-We develop modern web applications using Flask and Python.
-Our focus is on clean design, high performance and user-friendly experiences.
-
-</p>
-
-</section>
-
-
-
-<section class="contact" id="contact">
-
-<h2>Contact Us</h2>
-
-<p>Email : info@example.com</p>
-
-<p>Phone : +91 XXXXX XXXXX</p>
-
-<p>Location : India</p>
-
-</section>
-
-
-
-<footer>
-
-<p>© 2026 MyWebsite | All Rights Reserved.</p>
-
-</footer>
-
 </body>
 </html>
-
-
-
